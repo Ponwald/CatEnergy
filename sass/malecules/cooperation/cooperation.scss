@@ -1,0 +1,18 @@
+.cooperation {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  .cooperation__title {
+    font-family: "Oswald";
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .cooperation__street,
+  .cooperation__city {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

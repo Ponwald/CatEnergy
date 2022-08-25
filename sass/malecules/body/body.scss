@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../../../fonts/Oswaldregular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(../../../fonts/Oswaldmedium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Arial;
+  src: url(../../../fonts/Arial.ttf);
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}

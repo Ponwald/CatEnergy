@@ -1,0 +1,31 @@
+.programs-list {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.programs-list .programs-list__item {
+  background-color: rgb(242, 242, 242);
+  padding-top: 21px;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 18px;
+}
+.programs-list .program__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.programs-list .program__text {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+}
+.programs-list .program__link {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=programs-list.css.map */

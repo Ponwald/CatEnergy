@@ -1,0 +1,40 @@
+.head-block {
+  font-family: "Oswald";
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-image: url(../../../img/head-block-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 305px;
+  background-position: center top;
+  color: #fff;
+
+  .head-block__title,
+  .head-block__text {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .head-block__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .head-block__text {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  .main__product {
+    width: 280px;
+    height: 271px;
+  }
+  .head-block__button {
+    background-color: rgba(104, 183, 56);
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}

@@ -1,0 +1,63 @@
+.form {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+}
+.form .form__title {
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 37px;
+}
+.form .form__text {
+  margin: 0;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+}
+.form h3 {
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 37px;
+}
+.form label {
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+}
+.form .fields__textfield {
+  margin-bottom: 15px;
+}
+.form .fields__textfield {
+  margin-left: 15px;
+}
+.form .program-type-list__item {
+  margin-bottom: 25px;
+}
+.form .fields__textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 22px;
+}
+.form .add-list__item {
+  margin-bottom: 24px;
+}
+.form .fields__button {
+  width: 100%;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form .fields__note {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+}/*# sourceMappingURL=form.css.map */

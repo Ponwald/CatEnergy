@@ -1,0 +1,12 @@
+header {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 23px;
+  padding-bottom: 16px;
+}
+header nav {
+  display: none;
+  font-family: "Oswald-Medium";
+  font-size: 20px;
+  line-height: 20px;
+}/*# sourceMappingURL=header.css.map */
