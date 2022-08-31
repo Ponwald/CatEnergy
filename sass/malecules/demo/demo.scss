@@ -25,6 +25,12 @@
     font-size: 12px;
     line-height: 12px;
   }
+  .demo__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .demo__progress-img {
     width: 280px;
     height: 232px;
@@ -34,5 +40,67 @@
     font-family: "Oswald";
     font-size: 16px;
     line-height: 20px;
+  }
+  .demo__caption {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .demo {
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+    .demo__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 63px;
+    }
+    .demo__text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 54px;
+    }
+    .demo__stats-value {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    .demo__stats-subtitle {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    .demo__caption {
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .demo__progress {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .demo__progress-img {
+      margin: 0;
+      padding: 0;
+      width: 355px;
+      height: 511px;
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .demo {
+    .demo__container {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .demo__wrapper {
+      width: 50%;
+    }
+    .demo__progress {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

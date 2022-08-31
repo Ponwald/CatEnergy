@@ -26,4 +26,95 @@
 .add-catalog .add-product__button {
   margin: 0;
   margin-bottom: 19px;
+}
+.add-catalog .add-catalog__promo {
+  background-image: url(../../../img/catalog-add-product-background.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 43px;
+}
+.add-catalog .add-catalog__promo .add-catalog__icon-gift {
+  margin: 0;
+  margin-bottom: 48px;
+  color: #fff;
+}
+.add-catalog .add-catalog__promo .add-catalog__promo-text {
+  font-family: Arial;
+  font-style: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 43px;
+}
+
+@media (min-width: 768px) {
+  .add-catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .add-catalog .add-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .add-catalog .add-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .add-catalog .add-catalog__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .add-catalog .add-product__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .add-catalog .add-product__options {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .add-catalog .add-catalog__promo {
+    background-image: url(../../../img/catalog-add-product-background-tablet.jpg);
+    background-size: 100% auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .add-catalog .add-catalog__icon-gift {
+    width: 80px;
+    height: 82px;
+  }
+  .add-catalog .add-catalog__promo-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .add-catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .add-catalog .add-catalog__item {
+    display: flex;
+  }
+  .add-catalog .add-catalog__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .add-catalog .add-catalog__promo {
+    display: flex;
+  }
+  .add-catalog .add-catalog__promo {
+    background-image: url(../../../img/catalog-add-product-background-desctop.jpg);
+    background-size: 244px 288px;
+    width: 244px;
+    height: 288px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .add-catalog .add-catalog__promo-text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=add-catalog.css.map */

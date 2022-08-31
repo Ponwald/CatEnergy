@@ -22,15 +22,21 @@
   margin: -1px;
 }
 body {
+  min-height: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-li {
-  list-style: none;
-}
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  li {
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px){
+  }

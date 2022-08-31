@@ -1,33 +1,99 @@
 .programs-list {
-  padding-top: 20px;
-  padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-left: 20px;
 
   .programs-list__item {
-	background-color: rgba(242, 242, 242, 1);
-	padding-top: 21px;
-	padding-left: 20px;
-	padding-right: 33px;
-	padding-bottom: 18px;
+    background-color: rgba(242, 242, 242, 1);
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 33px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
   }
   .program__title {
-	font-family: "Oswald";
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 37px;
-	text-transform: uppercase;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
   }
   .program__text {
-	font-family: Arial;
-	font-size: 14px;
-	line-height: 18px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
   }
   .program__link {
-	font-family: "Oswald";
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	
+    font-family: "Oswald";
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  .program__slim-bottom {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .programs-list {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .program__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .program__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .program__link {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .programs-list__item {
+      display: flex;
+      padding-left: 62px;
+      padding-top: 77px;
+      padding-bottom: 53px;
+      padding-right: 52px;
+		margin-bottom: 45px;
+    }
+
+    .program__slim-top {
+      display: none;
+    }
+    .program__slim-bottom {
+      display: block;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .programs-list {
+    padding-right: 110px;
+    padding-left: 110px;
+    display: flex;
+
+    .programs-list__item {
+      display: flex;
+    }
+    .programs-list__item:nth-child(2) {
+      margin-right: 80px;
+    }
+    .program__text {
+      margin-bottom: 23px;
+    }
+    .programs-list__content {
+      display: flex;
+      flex-direction: column;
+    }
+    .program__slim-top {
+      display: block;
+    }
+    .program__slim-bottom {
+      display: none;
+    }
+    span {
+      display: flex;
+    }
   }
 }

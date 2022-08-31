@@ -15,4 +15,31 @@
   font-family: Arial;
   font-size: 14px;
   line-height: 20px;
+}
+.cooperation .cooperation__street span {
+  display: block;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .cooperation {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .cooperation .cooperation__adress {
+    display: flex;
+    flex-grow: row;
+    justify-content: space-between;
+  }
+  .cooperation .cooperation__title {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cooperation .cooperation__street {
+    text-align: right;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=cooperation.css.map */

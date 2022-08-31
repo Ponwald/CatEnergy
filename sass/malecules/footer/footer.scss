@@ -5,3 +5,27 @@
 	padding-bottom: 20px;
 	padding-top: 39px;
 }
+@media (min-width: 768px) {
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 30px;
+		padding-right: 30px;
+		align-items: center;
+		.footer__block{
+			display: flex;
+		}
+		.footer__list {
+			display: flex;
+		}
+		.social-list__item {
+			margin-right: 24px;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.footer{
+		padding-left: 110px;
+		padding-right: 110px;
+	}
+}

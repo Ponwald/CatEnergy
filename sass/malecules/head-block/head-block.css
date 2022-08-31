@@ -13,7 +13,6 @@
 .head-block .head-block__title,
 .head-block .head-block__text {
   text-align: center;
-  font-weight: 400;
 }
 .head-block .head-block__title {
   font-size: 36px;
@@ -32,7 +31,51 @@
   background-color: rgb(104, 183, 56);
   font-size: 14px;
   line-height: 18px;
-  width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .head-block {
+    padding: 0;
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 237px;
+    background: none;
+    color: #000;
+  }
+  .head-block .head-block__title,
+.head-block .head-block__text {
+    text-align: start;
+  }
+  .head-block .head-block__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+  .head-block .head-block__text {
+    margin-bottom: 49px;
+  }
+  .head-block .head-block__text,
+.head-block .head-block__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .head-block .main__product {
+    display: none;
+  }
+  .head-block .head-block__button {
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .head-block {
+    padding-left: 190px;
+    padding-bottom: 82px;
+  }
 }/*# sourceMappingURL=head-block.css.map */

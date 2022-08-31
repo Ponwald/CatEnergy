@@ -1,29 +1,121 @@
 .add-catalog {
-	padding-left: 20px;
-	padding-right: 20px;
-	.add-catalog__title {
-		font-family: "Oswald";
-		font-size: 24px;
-		line-height: 24px;
-		margin: 0;
-		margin-bottom: 49px;
-	}
-	.add-product__title {
-		font-family: "Oswald";
-		font-size: 16px;
-		line-height: 16px;
-		margin: 0;
-		margin-bottom: 13px;
-	}
-	.add-product__options {
-		font-family: Arial;
-		font-style: 14px;
-		line-height: 14px;
-		margin: 0;
-		margin-bottom: 15px;
-	}
-	.add-product__button {
-		margin: 0;
-		margin-bottom: 19px;
-	}
+  padding-left: 20px;
+  padding-right: 20px;
+  .add-catalog__title {
+    font-family: "Oswald";
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  .add-product__title {
+    font-family: "Oswald";
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+  .add-product__options {
+    font-family: Arial;
+    font-style: 14px;
+    line-height: 14px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .add-product__button {
+    margin: 0;
+    margin-bottom: 19px;
+  }
+  .add-catalog__promo {
+    background-image: url(../../../img/catalog-add-product-background.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 43px;
+
+    .add-catalog__icon-gift {
+      margin: 0;
+      margin-bottom: 48px;
+      color: #fff;
+    }
+    .add-catalog__promo-text {
+      font-family: Arial;
+      font-style: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 43px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .add-catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+    .add-catalog__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .add-catalog__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .add-catalog__item-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .add-product__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .add-product__options {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .add-catalog__promo {
+      background-image: url(../../../img/catalog-add-product-background-tablet.jpg);
+      background-size: 100% auto;
+      display: flex;
+      justify-content: space-around;
+    }
+    .add-catalog__icon-gift {
+      width: 80px;
+      height: 82px;
+    }
+    .add-catalog__promo-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .add-catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+    .add-catalog__item {
+      display: flex;
+    }
+	 .add-catalog__wrapper{
+		display: flex;
+		align-items: center;
+	 }
+	 .add-catalog__promo {
+		display: flex;
+	 }
+	 .add-catalog__promo {
+		background-image: url(../../../img/catalog-add-product-background-desctop.jpg);
+		background-size: 244px 288px;
+		width: 244px;
+		height: 288px;
+		display: flex;
+      justify-content: space-around;
+	 }
+	 .add-catalog__promo-text {
+		text-align: center;
+	 }
+  }
 }
