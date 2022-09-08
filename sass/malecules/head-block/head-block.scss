@@ -39,29 +39,38 @@
 
 @media (min-width: 768px) {
   .head-block {
-    padding: 0;
-    margin: 0;
-    padding-left: 120px;
-    padding-right: 237px;
-    background: none;
+    background-image: url(../../../img/canned-chicken-header-block-tabled.jpg);
+    background-position: 30px 275px;
+    background-size: 709px 609px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 526px;
     color: #000;
+    .head-block__wrapper {
+      padding-left: 90px;
+    }
     .head-block__title,
     .head-block__text {
       text-align: start;
     }
     .head-block__title {
-      margin: 0;
+      width: 414px;
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 41px;
-    }
-    .head-block__text {
-      margin-bottom: 49px;
+      font-weight: 400;
     }
     .head-block__text,
     .head-block__button {
       font-size: 20px;
       line-height: 20px;
+    }
+    .head-block__text {
+      margin-bottom: 49px;
+      width: 283px;
+    }
+    .head-block__button {
+      width: 192px;
     }
     .main__product {
       display: none;
@@ -77,7 +86,17 @@
 }
 @media (min-width: 1200px) {
   .head-block {
-    padding-left: 190px;
-	 padding-bottom: 82px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-image: url(../../../img/head-block-background.jpg);
+    background-position: calc(100% + 135px) 0;
+    background-size: 680px 696px;
+    .head-block__wrapper {
+      padding-left: 80px;
+    }
+    .head-block__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

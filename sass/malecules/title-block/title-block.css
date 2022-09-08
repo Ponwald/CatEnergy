@@ -8,6 +8,7 @@
   font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 49px;
 }
 
 @media (min-width: 768px) {
@@ -16,6 +17,7 @@
     padding-left: 30px;
   }
   .title-block .title-block__title {
+    margin-bottom: 82px;
     font-size: 60px;
     line-height: 60px;
   }

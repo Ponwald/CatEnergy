@@ -6,43 +6,78 @@
   padding-bottom: 40px;
   .demo__title {
     font-family: "Oswald";
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 40px;
   }
   .demo__text {
+    margin: 0;
+    padding: 0;
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .demo__stats-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .demo__stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 124px;
+    position: relative;
+    border: 1px solid #cdcdcd;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+  }
+  .demo__stats-item:nth-child(1) {
+    margin-right: 16px;
   }
   .demo__stats-value {
     font-family: "Oswald";
+    text-transform: uppercase;
     font-size: 24px;
     line-height: 24px;
+    margin: auto;
   }
   .demo__stats-subtitle {
     font-family: Arial;
     font-size: 12px;
     line-height: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -16px;
+    margin: 0 auto;
+    text-align: center;
+    width: 60px;
+    background-color: rgb(234, 234, 234);
   }
-  .demo__wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
   .demo__progress-img {
+    display: none;
+  }
+  .demo__progress-img-mobile {
     width: 280px;
     height: 232px;
-    background-color: none;
   }
   .demo__progress-button {
     font-family: "Oswald";
     font-size: 16px;
     line-height: 20px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+    text-transform: uppercase;
   }
   .demo__caption {
     text-transform: uppercase;
+    text-align: center;
   }
 }
 
@@ -61,6 +96,16 @@
       line-height: 24px;
       margin-bottom: 54px;
     }
+    .demo__wrapper {
+      display: flex;
+      margin-bottom: 80px;
+    }
+    .demo__stats-item {
+      width: 165px;
+    }
+    .demo__stats-item:nth-child(2) {
+      margin-right: 167px;
+    }
     .demo__stats-value {
       font-size: 30px;
       line-height: 37px;
@@ -68,6 +113,9 @@
     .demo__stats-subtitle {
       font-size: 14px;
       line-height: 14px;
+      background-color: #fff;
+      width: 127px;
+      bottom: -8px;
     }
     .demo__caption {
       font-size: 20px;
@@ -81,26 +129,40 @@
       justify-content: space-between;
     }
     .demo__progress-img {
+      display: block;
       margin: 0;
       padding: 0;
       width: 355px;
       height: 511px;
       margin-bottom: 25px;
     }
+    .demo__progress-button {
+      background-color: #fff;
+    }
+    .demo__progress-img-mobile {
+      display: none;
+    }
   }
 }
 @media (min-width: 1200px) {
   .demo {
+    display: flex;
+    justify-content: space-between;
     .demo__container {
       display: flex;
       flex-wrap: nowrap;
+      width: 29%;
     }
     .demo__wrapper {
-      width: 50%;
+      flex-wrap: wrap;
     }
     .demo__progress {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+    }
+    .demo__container {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

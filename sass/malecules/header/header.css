@@ -1,69 +1,104 @@
-header {
+.header {
   padding-top: 12px;
   padding-left: 20px;
   padding-right: 20px;
 }
-header .header__top {
+.header .header__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  align-items: center;
 }
-header nav {
+.header .header__top .header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 16px;
+  border: none;
+  padding: 0;
+}
+.header .header__top .header__burger span {
+  display: block;
+  background-color: #000;
+  width: 24px;
+  height: 2px;
+}
+.header .header__nav {
   font-family: "Oswald-Medium";
   font-size: 20px;
   line-height: 20px;
   text-align: center;
 }
-header nav .header__menu {
+.header .header__nav .header__menu {
   padding: 0;
   margin: 0;
 }
-header nav .header__menu .header__menu-item {
+.header .header__nav .header__menu .header__menu-item {
   padding-top: 22px;
   padding-bottom: 24px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.header .header__nav .header__menu .header__menu-item:nth-child(1),
+.header .header__nav .header__menu .header__menu-item:nth-child(3) {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 @media (min-width: 768px) {
-  header {
+  .header {
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 24px;
-    padding-bottom: 62px;
+    padding-bottom: 64px;
   }
-  header .header__wrapper {
+  .header .header__wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-  header .header__top {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  .header .header__wrapper .header__top {
+    display: inline-block;
     margin: 0;
     margin-right: 94px;
   }
-  header .header__link {
+  .header .header__wrapper .header__top .header__logo {
     margin-right: 12px;
   }
-  header .header__menu-item {
-    display: inline;
-    margin-right: 35px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  header .header__burger {
+  .header .header__wrapper .header__top .header__burger {
     display: none;
+  }
+  .header .header__wrapper .header__menu {
+    display: flex;
+  }
+  .header .header__wrapper .header__menu .header__menu-item {
+    margin-right: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .header .header__wrapper .header__menu .header__menu-item:nth-child(1),
+.header .header__wrapper .header__menu .header__menu-item:nth-child(3) {
+    border: none;
+  }
+  .header .header__wrapper .header__menu .header__menu-item:nth-child(1) {
+    border-bottom: 2px solid #68b738;
+    padding-bottom: 10px;
+  }
+  .header .header__wrapper .header__menu .header__menu-item:nth-child(3) {
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
-  header {
+  .header {
     padding-left: 110px;
+    padding-right: 110px;
   }
-  header .header__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  header .header__menu-item {
-    font-size: 20px;
+  .header .header__nav .header__menu .header__menu-item {
     line-height: 30px;
+  }
+  .header .header__nav .header__menu .header__menu-item:nth-child(1) {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
   }
 }/*# sourceMappingURL=header.css.map */

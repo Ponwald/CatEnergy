@@ -13,22 +13,34 @@
         <div class="header__wrapper">
           <div class="header__top">
             <a href="header__link">
-              <img src="#" alt="Логотип" class="header__logo" />
+              <img
+                src="./svg/logo-header-mobile.svg"
+                alt="Логотип"
+                class="header__logo"
+              />
             </a>
-            <img src="" alt="" class="header__logo-title" />
+            <img
+              src="./svg/Logo-header-text.svg"
+              alt="Cat Energy"
+              class="header__logo-title"
+            />
             <button type="button" class="header__burger"></button>
           </div>
 
           <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Главная</a>
+                <a href="./index.html" class="header__menu-link">Главная</a>
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Каталог продукции</a>
+                <a href="./catalog.html" class="header__menu-link"
+                  >Каталог продукции</a
+                >
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Подбор программы</a>
+                <a href="./form.html" class="header__menu-link"
+                  >Подбор программы</a
+                >
               </li>
             </ul>
           </nav>
@@ -44,83 +56,86 @@
         </p>
         <div class="selection">
           <form action="#" class="selection__form fields">
-            <div class="fields__set fields__set--personal">
-              <div class="fields__block">
-                <label for="catname" class="fields__label">Имя:*</label>
-                <input
-                  type="text"
-                  placeholder="Барсик"
-                  class="fields__textfield"
-                />
+            <div class="fields__wrapper">
+              <div class="fields__set fields__set--personal">
+                <div class="fields__block">
+                  <label for="catname" class="fields__label">Имя:*</label>
+                  <input
+                    type="text"
+                    placeholder="Барсик"
+                    class="fields__textfield"
+                  />
+                </div>
+                <div class="fields__block">
+                  <label for="weight" class="fields__label">Вес (кг):*</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="7"
+                    class="fields__textfield"
+                  />
+                </div>
+                <div class="fields__block">
+                  <label for="age" class="fields__label">Возраст (лет):</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="7"
+                    class="fields__textfield"
+                  />
+                </div>
               </div>
-              <div class="fields__block">
-                <label for="weight" class="fields__label">Вес (кг):*</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="7"
-                  class="fields__textfield"
-                />
-              </div>
-              <div class="fields__block">
-                <label for="age" class="fields__label">Возраст (лет):</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="7"
-                  class="fields__textfield"
-                />
+
+              <div class="fields__set fields__set--program">
+                <ul class="fields__list program-type-list">
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" />
+                    <label class="program-type-list__label" for="slim"
+                      >Похудение</label
+                    >
+                  </li>
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" />
+                    <label class="program-type-list__label" for="mass"
+                      >Набор массы</label
+                    >
+                  </li>
+                  <li class="program-type-list__item">
+                    <input type="radio" class="program-type-list__input" />
+                    <label class="program-type-list__label" for="slim"
+                      >Не знаю (нужен ваш совет)</label
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div class="fields__set fields__set--program">
-              <ul class="fields__list program-type-list">
-                <li class="program-type-list__item">
-                  <input type="radio" class="program-type-list__input" />
-                  <label class="program-type-list__label" for="slim"
-                    >Похудение</label
-                  >
-                </li>
-                <li class="program-type-list__item">
-                  <input type="radio" class="program-type-list__input" />
-                  <label class="program-type-list__label" for="mass"
-                    >Набор массы</label
-                  >
-                </li>
-                <li class="program-type-list__item">
-                  <input type="radio" class="program-type-list__input" />
-                  <label class="program-type-list__label" for="slim"
-                    >Не знаю (нужен ваш совет)</label
-                  >
-                </li>
-              </ul>
-            </div>
-
             <div class="fields__set fields__set--contacts">
               <div class="fields__head">
                 <h3 class="fields__title">
                   Контактные данные (владельца кота)
                 </h3>
               </div>
-              <div class="fields__inner">
-                <label class="fields__label" for="email">E-mail:*</label>
-                <input
-                  class="fields__textfield"
-                  type="email"
-                  placeholder="kuklachev@gmail.com"
-                />
-                <img src="#" alt="#" />
-                <label class="fields__label" for="phone">Телефон:*</label>
-                <input
-                  class="fields__textfield"
-                  type="phone"
-                  name="phone"
-                  id=""
-                  placeholder="8 (960) 900-60-90"
-                />
-                <img src="#" alt="#" />
+              <div class="fields__set">
+                <div class="fields__block email">
+                  <label class="fields__label" for="email">E-mail:*</label>
+                  <input
+                    class="fields__textfield"
+                    type="email"
+                    placeholder="kuklachev@gmail.com"
+                  />
+                </div>
+                <div class="fields__block phone">
+                  <label class="fields__label" for="phone">Телефон:*</label>
+                  <input
+                    class="fields__textfield"
+                    type="phone"
+                    name="phone"
+                    id=""
+                    placeholder="8 (960) 900-60-90"
+                  />
+                </div>
               </div>
             </div>
 
@@ -163,22 +178,26 @@
                   >
                 </li>
               </ul>
-            </div>
-            <div class="fields__button-block">
-              <button class="fields__button button" type="submit">
-                Отправить заявку
-              </button>
-              <p class="fields__note">* — Обязательные поля</p>
+
+              <div class="fields__button-block">
+                <button class="fields__button button" type="submit">
+                  Отправить заявку
+                </button>
+                <p class="fields__note">* — Обязательные поля</p>
+              </div>
             </div>
           </form>
         </div>
       </section>
       <section class="cooperation">
-			<div class="cooperation__adress">
-			<h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8
-				<span>Санкт-Петербург </span>
-			</p>
+        <div class="cooperation__adress">
+          <h2 class="cooperation__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <p class="cooperation__street">
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург </span>
+          </p>
         </div>
         // Карта //
       </section>

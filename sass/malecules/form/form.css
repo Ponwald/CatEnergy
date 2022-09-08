@@ -1,43 +1,77 @@
+.header__nav {
+  display: none;
+}
+
 .form {
   padding-left: 20px;
   padding-right: 20px;
 }
 .form .form__title {
   margin: 0;
+  font-weight: 400;
   font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 27px;
 }
 .form .form__text {
   margin: 0;
+  width: 226px;
   font-family: "Oswald";
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
 }
-.form h3 {
+.form .fields__title {
   margin: 0;
+  font-weight: 400;
   font-family: "Oswald";
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 37px;
 }
+.form .fields__title:nth-child(1) {
+  width: 187px;
+}
 .form label {
   margin: 0;
+  text-transform: uppercase;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
 }
+.form .fields__block:nth-child(3) {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 27px;
+}
+.form .fields__list {
+  margin: 0;
+  padding: 0;
+}
+.form .fields__set {
+  margin-top: 22px;
+}
+.form .program-type-list__item:nth-child(3) {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 19px;
+}
 .form .fields__textfield {
   margin-bottom: 15px;
+  border: 1px solid #f2f2f2;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .form .fields__textfield {
   margin-left: 15px;
 }
 .form .program-type-list__item {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
+}
+.form .program-type-list__input {
+  margin-right: 15px;
 }
 .form .fields__textarea {
   width: 100%;
@@ -51,6 +85,7 @@
   margin-bottom: 22px;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
 }
 .form .fields__note {
   font-family: Arial;
@@ -61,6 +96,9 @@
 }
 
 @media (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
   .form {
     padding-left: 69px;
     padding-right: 69px;
@@ -68,6 +106,11 @@
   .form .form__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 54px;
+    border: none;
+  }
+  .form .form__text {
+    width: 323px;
   }
   .form .form__text,
 .form .fields__block,
@@ -83,6 +126,9 @@
     font-size: 36px;
     line-height: 36px;
   }
+  .form .fields__title:nth-child(1) {
+    width: 512px;
+  }
   .form .fields__button-block {
     display: inline-block;
   }
@@ -92,11 +138,77 @@
   .form .fields__button-block .fields__note {
     display: inline-block;
   }
+  .form .fields__block:nth-child(3) {
+    border: none;
+  }
+  .form .fields__set {
+    display: flex;
+    flex-direction: column;
+  }
+  .form .fields__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form .fields__list {
+    border: 1px solid #f2f2f2;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+  }
+  .form .program-type-list__input {
+    margin-right: 19px;
+  }
+  .form .fields__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .form .fields__textfield {
+    width: 70%;
+  }
+  .form .program-type-list__item:nth-child(3) {
+    border: none;
+    padding: 0;
+  }
+  .form .fields__list {
+    border: none;
+  }
+  .form .add-list {
+    display: flex;
+    width: 565px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form .add-list__item {
+    display: flex;
+    align-items: center;
+    width: 221px;
+  }
+  .form .fields__button {
+    width: 50%;
+    margin-right: 61px;
+  }
 }
 @media (min-width: 1200px) {
   .form {
     padding-left: 110px;
     padding-right: 110px;
+  }
+  .fields__wrapper {
+    display: flex;
+  }
+  .fields__set--personal {
+    width: 50%;
+    margin-right: 80px;
+    height: 200px;
+  }
+  .fields__set--program {
+    border: 1px solid #f2f2f2;
+    width: 568px;
+    height: 200px;
+  }
+  .fields__block {
+    width: 100%;
   }
   .fields__list {
     display: inline-block;

@@ -14,8 +14,30 @@
   }
   .instruction__text {
     font-family: Arial;
+    width: 200px;
+    height: 54px;
     font-size: 14px;
     line-height: 18px;
+  }
+  .instruction__list {
+    padding: 0;
+    margin: 0;
+  }
+  .instruction__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .instruction__wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #68b738;
+    width: 60px;
+    height: 60px;
+  }
+  .instruction__item-img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -31,6 +53,7 @@
       margin-bottom: 32px;
     }
     .instruction__text {
+      width: 244px;
       font-size: 16px;
       line-height: 24px;
     }
@@ -40,15 +63,45 @@
       margin: 0;
       flex-wrap: wrap;
       justify-content: space-between;
-      .instruction__item {
-        width: 247px;
-        display: flex;
-        flex-direction: column;
-        .instruction__item-img {
-          padding-top: 40px;
-          margin-bottom: 31px;
-        }
-      }
+    }
+    .instruction__item {
+      width: 250px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 37px;
+    }
+    .instruction__wrapper {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
+    .instruction__item:nth-child(1) {
+      background-image: url(../../../svg/background-1.svg);
+      background-repeat: no-repeat;
+      background-size: 71px 303px;
+      background-position: 127px 0;
+    }
+    .instruction__item:nth-child(2) {
+      background-image: url(../../../svg/background-2.svg);
+      background-repeat: no-repeat;
+      background-size: 114px 303px;
+      background-position: 123px 0;
+    }
+    .instruction__item:nth-child(3) {
+      background-image: url(../../../svg/background-3.svg);
+      background-repeat: no-repeat;
+      background-size: 113px 303px;
+      background-position: 123px 0;
+    }
+    .instruction__item:nth-child(4) {
+      background-image: url(../../../svg/background-4.svg);
+      background-repeat: no-repeat;
+      background-size: 121px 303px;
+      background-position: 124px 0;
     }
   }
 }

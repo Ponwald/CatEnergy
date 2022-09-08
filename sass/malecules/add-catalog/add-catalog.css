@@ -1,4 +1,5 @@
 .add-catalog {
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -6,15 +7,30 @@
   font-family: "Oswald";
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
 }
 .add-catalog .add-product__title {
   font-family: "Oswald";
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
+}
+.add-catalog .add-catalog__list {
+  margin: 0;
+  padding: 0;
+}
+.add-catalog .add-catalog__item {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+.add-catalog .add-catalog__item:nth-child(4) {
+  border-bottom: 1px solid #f2f2f2;
 }
 .add-catalog .add-product__options {
   font-family: Arial;
@@ -35,19 +51,19 @@
   text-align: center;
   padding-top: 58px;
   padding-bottom: 43px;
+  margin-top: 35px;
 }
-.add-catalog .add-catalog__promo .add-catalog__icon-gift {
-  margin: 0;
-  margin-bottom: 48px;
-  color: #fff;
-}
-.add-catalog .add-catalog__promo .add-catalog__promo-text {
+.add-catalog .add-catalog__promo-text {
   font-family: Arial;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #fff;
-  margin-bottom: 43px;
+  margin: 0;
+  margin-top: 48px;
+  padding-bottom: 43px;
+  padding-left: 58px;
+  padding-right: 58px;
 }
 
 @media (min-width: 768px) {
@@ -68,6 +84,13 @@
     display: flex;
     justify-content: space-between;
   }
+  .add-catalog .add-catalog__item {
+    border: 1px solid #f2f2f2;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
   .add-catalog .add-product__title {
     font-size: 20px;
     line-height: 20px;
@@ -80,15 +103,20 @@
     background-image: url(../../../img/catalog-add-product-background-tablet.jpg);
     background-size: 100% auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 69px;
+    align-items: center;
   }
   .add-catalog .add-catalog__icon-gift {
     width: 80px;
     height: 82px;
+    padding-left: 77px;
   }
   .add-catalog .add-catalog__promo-text {
     font-size: 16px;
     line-height: 20px;
+    width: 161px;
+    padding-right: 124px;
   }
 }
 @media (min-width: 1200px) {
@@ -98,23 +126,46 @@
   }
   .add-catalog .add-catalog__item {
     display: flex;
+    width: 894px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+    justify-content: space-between;
   }
   .add-catalog .add-catalog__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
-  .add-catalog .add-catalog__promo {
-    display: flex;
+  .add-catalog .add-product__button {
+    width: 244px;
+    margin: 0;
+  }
+  .add-catalog .add-catalog__title {
+    margin-bottom: 81px;
   }
   .add-catalog .add-catalog__promo {
     background-image: url(../../../img/catalog-add-product-background-desctop.jpg);
     background-size: 244px 288px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     width: 244px;
     height: 288px;
     display: flex;
     justify-content: space-around;
   }
+  .add-catalog .add-catalog__icon-gift {
+    padding: 0;
+  }
   .add-catalog .add-catalog__promo-text {
-    text-align: center;
+    padding: 0;
+    margin: 0;
   }
 }/*# sourceMappingURL=add-catalog.css.map */
